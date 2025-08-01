@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>부안군 농기계 임대 예측 대시보드</title>
+
+    <!-- ─────────────────────────────────────
+         1) ChannelTalk(채널톡) 플러그인 설치
+         관리자 페이지에서 복사한 스크립트를 그대로 붙여주세요.
+    ───────────────────────────────────── -->
+    <script>
+      (function() {
+        var w = window;
+        if (w.ChannelIO) {
+          return (window.console.error || window.console.log)(
+            "ChannelIO script included twice."
+          );
+        }
+        var ch = function() {
+          ch.c(arguments);
+        };
+        ch.q = [];
+        ch.c = function(args) {
+          ch.q.push(args);
+        };
+        w.ChannelIO = ch;
+        function l() {
+          if (w.ChannelIOInitialized) {
+            return;
+          }
+          w.ChannelIOInitialized = true;
+          var s = document.createElement("script");
+          s.type = "text/javascript";
+          s.async = true;
+          s.src = "https://cdn.channel.io/plugin/ch-plugin-web.js";
+          var x = document.getElementsByTagName("script")[0];
+          x.parentNode.insertBefore(s, x);
+        }
+        if (document.readyState === "complete") {
+          l();
+        } else {
+          window.addEventListener("DOMContentLoaded", l);
+          window.addEventListener("load", l);
+        }
+      })();
+    </script>
+    <script>
+      // 여기에 반드시 본인의 pluginKey를 넣어주세요.
+      window.ChannelIO("boot", {
+        pluginKey: "19e64f2a-5386-4463-abfa-afe84f17cde4"
+      });
+    </script>
+    <!-- ───────────────────────────────────── -->
+    <script type="module" crossorigin src="/buan/assets/index-BdyUWdFj.js"></script>
+    <link rel="stylesheet" crossorigin href="/buan/assets/index-LS5q9OoL.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- Vite는 개발 모드에서 이 스크립트를 자동으로 삽입합니다 -->
+  </body>
+</html>
