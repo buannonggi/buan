@@ -1,4 +1,4 @@
-﻿year_month,machine,predicted_count,temperature,rainfall
+﻿date,machine,predicted_count,temperature,rainfall
 2025-08,기타,2,25.6,357.7
 2025-08,동력살분무기,39,25.6,357.7
 2025-08,보행관리기,42,25.6,357.7
